@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    transition: background 0.5s; /* animación de fondo */
+      background-image: url('img/fondoRVA_1.png');
+      background-size: cover; /* Opcional, para que la imagen se ajuste al tamaño de la pantalla */
+      background-repeat: no-repeat; /* Opcional, para que la imagen no se repita */
+  }
+  h1
+  {
+    margin-bottom: 10;
+    padding: 20px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+  
+header 
+{
+    /*background-color: #4f025a;*/
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+  
+  .logotipo {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logotipo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  nav {
+    max-width: 1200px; /* ancho máximo para la barra de navegación */
+    margin: 0 auto; /* centrar la barra de navegación */
+    padding: 10px; /* agregar un poco de padding para que se vea bien */
+    display: flex; /* hacer que la barra de navegación sea flexible */
+    justify-content: center; /* centrar los elementos de la barra de navegación de manera uniforme */
+    align-items: center; /* centrar los elementos de la barra de navegación verticalmente */
+  }
+  nav ul {
+    list-style: none; /* quitar los puntos de la lista */
+    margin: 0; /* quitar el margen de la lista */
+    padding: 0; /* quitar el padding de la lista */
+    display: flex; /* hacer que la lista sea flexible */
+    justify-content: space-between; /* distribuir los elementos de la lista de manera uniforme */
+  }
+  
+  nav li {
+    margin-right: 20px; /* agregar un poco de espacio entre los elementos de la lista */
+  }
+  
+  nav a {
+    color: #fff; /* color del texto de los enlaces */
+    text-decoration: none; /* quitar la decoración de los enlaces */
+    transition: color 0.5s; /* agregar una transición para el color de los enlaces */
+    background: -webkit-linear-gradient(120deg, hsl(187, 100%, 50%), hsl(0, 0%, 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  nav a:hover {
+    border-bottom: 2px solid hsl(187, 100%, 50%);
+    transition: 1s;
+  }
+  
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  .articles {
+    width: 68.5%;
+    margin-right: 1.5%;
+    padding: 20px;
+    background-color: #2a003d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .articles article {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .articles h2 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .articles p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  .contacto{
+    width: 68.5%;
+    margin-right: 1.5%;
+    padding: 20px;
+    background-color: #2a003d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .contacto article {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilos para el apartado de contacto */
+  .contacto h2 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .contacto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .lista {
+    padding: 20px;
+    list-style: none;
+    margin: 0;
+  }
+  
+  .lista li {
+    margin-bottom: 10px;
+  }
+  
+  .lista li:before {
+    content: "•";
+    margin-right: 10px;
+    color: #900ef3;
+  }
+  
+  .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+
+  aside {
+    width: 30%;
+    padding: 15px;
+    height: 50%;
+    background-color: #071341;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  aside h3 {
+    font-size: 24px;
+    margin-top: 0;
+    color: #fff;
+  }
+  
+  aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  aside li {
+    margin-bottom: 10px;
+  }
+  
+  aside a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s; /* animación de texto */
+  }
+  
+  aside a:hover {
+    color: #13abec;
+  }
+  
+  footer {
+    background-color: #838ae5;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s; /* animación de texto */
+  }
+  
+  footer a:hover {
+    color: #01080b;
+  }
+  
+  /* Animaciones */
+  
+  .logotipo {
+    animation: spin 5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  nav a {
+    animation: fade 2s ease-in-out;
+  }
+  
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Estilos para el formulario de contacto */
+  .form-group{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 10px 15px 25px #bf21fd;
+  }
+  .form-goup h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .control{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 2px solid #400bd3;
+    font-size: 16px;
+    flex: 1 0 130px;
+  }
+  .form-group textarea{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 2px solid #400bd3;
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+  .botons {
+    width: 100%;
+    background-color: #400bd3;
+    border: none;
+    padding: 12px;
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 18px;
+    flex: 1 0 40px;
+  }
+  .botons:hover{
+    box-shadow: 0 0 5px #400bd3, 0 0 25px #400bd3;
+  }
+
+
+  /* ....................Responsive.................... */
+
+/* Estilos para pantallas pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+  /* Estilos aquí */
+  .main {
+    flex-direction: column;
+  }
+  .articles {
+    width: 100%;
+    margin-right: 0;
+  }
+  aside {
+    width: 100%;
+  }
+  .form-group {
+    width: 100%;
+  }
+  .logotipo {
+    width: 50px;
+    height: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin-right: 0;
+  }
+  .form-group {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+ .control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+ .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+ .botons {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+}
+
+/* Estilos para pantallas medianas (entre 480px y 768px) */
+@media (min-width: 480px) and (max-width: 768px) {
+  /* Estilos aquí */
+  .main {
+    flex-direction: row;
+  }
+  .articles {
+    width: 70%;
+    margin-right: 30px;
+  }
+  aside {
+    width: 30%;
+  }
+  .form-group {
+    width: 70%;
+  }
+  .logotipo {
+    width: 75px;
+    height: 75px;
+  }
+  nav {
+    flex-direction: row;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  .form-group {
+    width: 70%;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+ .control {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+ .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+ .botons {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+  }
+}
+
+
+/* Estilos para pantallas grandes (más de 768px) */
+@media (min-width: 768px) {
+  /* Estilos aquí */
+  .main {
+    flex-direction: row;
+  }
+  .articles {
+    width: 68.5%;
+    margin-right: 1.5%;
+  }
+  aside {
+    width: 30%;
+  }
+  .form-group {
+    width: 400px;
+  }
+  .logotipo {
+    width: 100px;
+    height: 100px;
+  }
+  nav {
+    flex-direction: row;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  nav li {
+    margin-right: 20px;
+  }
+  .form-group {
+    width: 400px;
+    padding: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+ .control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+ .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+  }
+ .botons {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+  }
+}
+
+/* Control para imágenes responsivas */
+img {
+  max-width: 100%; /* ancho máximo de la imagen */
+  height: auto; /* altura automática */
+  display: block; /* hacer que la imagen sea un bloque */
+  margin: 0 auto; /* centrar la imagen horizontalmente */
+}
+/* Control para imágenes responsivas dentro de contenedores */
+.container img {
+  width: 100%; /* ancho del 100% del contenedor */
+  height: auto; /* altura automática */
+  object-fit: cover; /* cubrir el contenedor con la imagen */
+  border-radius: 10px; /* agregar un borde redondeado */
+}
+/* Control para iframes responsivos */
+.iframe-container {
+  position: relative; /* posición relativa para el contenedor */
+  padding-bottom: 56.25%; /* relación de aspecto para videos de 16:9 */
+  height: 0; /* altura cero para que el iframe se ajuste automáticamente */
+  overflow: hidden; /* ocultar cualquier contenido que sobrepase el contenedor */
+}
+
+.iframe-container iframe {
+  position: absolute; /* posición absoluta para el iframe */
+  top: 0; /* posición superior del iframe */
+  left: 0; /* posición izquierda del iframe */
+  width: 100%; /* ancho del 100% del contenedor */
+  height: 100%; /* altura del 100% del contenedor */
+  border: none; /* quitar el borde del iframe */
+}
+/* Control para videos responsivos */
+.video-responsive {
+  width: 100%; /* ancho del 100% del contenedor */
+  height: auto; /* altura automática para mantener la relación de aspecto */
+  display: block; /* display block para que el video se centre */
+  margin: 0 auto; /* margen automático para centrar el video */
+}

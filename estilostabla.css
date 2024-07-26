@@ -1,0 +1,81 @@
+table {
+    width: 90%; /* Ancho máximo del 90% del contenedor */
+    max-width: 1000px; /* Máximo ancho de 1000px */
+    margin: 20px auto; /* Centrado horizontal con margen de 20px arriba y abajo */
+    border-collapse: collapse;
+    border: 2px solid #660c76;
+    background-color: #250303; /* Color de fondo blanco */
+    padding: 10px; /* Espaciado interno */
+}
+
+td, th {
+    border: 1px solid #660c76;
+    padding: 10px;
+    text-align: justify; /* Alineación centrada por defecto */
+    color: #fcf6f6; /* Color de texto */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+th {
+    background-color: #39024d; /* Color de fondo para encabezados */
+    color: #eeeeee; /* Color de texto para encabezados */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+}
+
+td {
+    background-color: #140404; /* Color de fondo para celdas */
+    border-bottom: 2px solid #3f0451; /* Borde inferior más oscuro */
+    text-align: justify; /* Alineación justificada */
+}
+
+/* Estilo para la primera columna */
+td:first-child, th:first-child {
+    text-align: justify; /* Alineación izquierda para la primera columna */
+}
+
+/* Estilo para la última columna */
+td:last-child, th:last-child {
+    text-align: justify; /* Alineación derecha para la última columna */
+}
+li{
+    text-align: justify;
+}
+
+
+
+
+
+
+
+/* Pantallas pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    table {
+      width: 100%; /* Ancho máximo del 100% del contenedor */
+      font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+    td, th {
+      padding: 5px; /* Espaciado interno más pequeño */
+    }
+  }
+  
+  /* Pantallas medianas (entre 480px y 768px) */
+  @media (min-width: 480px) and (max-width: 768px) {
+    table {
+      width: 90%; /* Ancho máximo del 90% del contenedor */
+      font-size: 16px; /* Tamaño de fuente medio */
+    }
+    td, th {
+      padding: 10px; /* Espaciado interno medio */
+    }
+  }
+  
+  /* Pantallas grandes (más de 768px) */
+  @media (min-width: 768px) {
+    table {
+      width: 80%; /* Ancho máximo del 80% del contenedor */
+      font-size: 18px; /* Tamaño de fuente grande */
+    }
+    td, th {
+      padding: 15px; /* Espaciado interno grande */
+    }
+  }
